@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url('finalbw.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #00ddff;
+  overflow: hidden;
+}
+
+.app-wrap {
+  background: rgba(13, 0, 255, 0.663);
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+  backdrop-filter: blur(5px);
+  text-align: center;
+  width: 350px;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.app-wrap:hover {
+  transform: scale(1.05);
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+header input {
+  width: 100%;
+  padding: 12px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 60, 255, 0.2);
+  color: #31a0d0;
+  font-size: 18px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+header input::placeholder {
+  color: #000000;
+}
+
+header input:focus {
+  background-color: rgb(0, 251, 167);
+}
+
+.location .city {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.location .date {
+  font-size: 18px;
+  font-weight: 300;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+}
+
+.current .temp {
+  font-size: 96px;
+  font-weight: 800;
+  margin: 20px 0;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  position: relative;
+}
+
+.current .temp span {
+  font-size: 48px;
+  font-weight: 300;
+  vertical-align: top;
+}
+
+.current .weather {
+  font-size: 28px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.current .hi-low {
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
